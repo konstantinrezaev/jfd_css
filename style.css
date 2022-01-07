@@ -62,7 +62,7 @@ body {
     grid-auto-flow: column;
 }
 
-.time2 {
+.time {
     padding-left: 50px;
 }
 
@@ -74,11 +74,11 @@ body {
     grid-auto-rows: minmax(0, auto);
 }
 
-.div1, .div2, .div3 {
+.title {
     font-weight: 700;
 }
 
-.div4 {
+.border {
     grid-area: 2 / 1 / 3 / 4;
     border-top: 2px solid #000;
     width: 90%;
@@ -91,11 +91,13 @@ body {
 }
 
 .link img {
-    height: 60px;
-    width: 60px;
-    transition: 0.5s all linear;
+    max-width: 100%;
+    max-height: 100%;
+    /*object-fit: cover;*/
+    transition: 0.2s all linear
 }
 
 .link img:hover {
-    transform: rotate(360deg);
+    transform: scale(1.2);
+    cursor: url("img/cursor.png"), auto;
 }
