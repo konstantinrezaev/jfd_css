@@ -99,5 +99,4 @@ body {
 
 .link img:hover {
     transform: scale(1.2);
-    cursor: url("img/cursor.png"), auto;
 }
